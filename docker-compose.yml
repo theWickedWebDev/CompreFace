@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 
 volumes:
   postgres-data:
@@ -59,7 +59,7 @@ services:
     image: ${registry}compreface-fe:${FE_VERSION}
     container_name: "compreface-ui"
     ports:
-      - "8000:80"
+      - "7000:80"
     depends_on:
       - compreface-api
       - compreface-admin
